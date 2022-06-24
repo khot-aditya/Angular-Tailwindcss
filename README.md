@@ -4,7 +4,10 @@
 - `npx @aditya6838/angular-starter <app-name>`
 - eg. npx @aditya6838/angular-starter my-angular-app
 
+<br>
+<br>
 
+---
 ## CLI Steps
 
 - Run `ng new project-name`
