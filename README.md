@@ -9,7 +9,6 @@ Example -  `npx @aditya6838/angular-starter my-angular-app`
 This command will download all starter files from npm then use `ng serve --open` or `npm start` to open app in browser.
 
 <br>
-<br>
 
 ---
 ## CLI Steps
