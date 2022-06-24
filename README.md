@@ -89,7 +89,7 @@
 <br>
 <br>
 
-# Angular version 13.3.5.
+# Angular version 13.3.5
 
 ## Development server
 
