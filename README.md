@@ -1,6 +1,95 @@
-# AngularTailwindcss
+# Angular with Tailwind CSS framework
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+## CLI Steps
+
+- Run `ng new project-name`
+  - use `--strict` to opt in to Strict Mode
+  - use `--routing` to handle the navigation
+- Run `cd project-name`
+- Run `npm install -D tailwindcss postcss autoprefixer`
+- Run `npx tailwindcss init`
+- Modify tailwind.config.js
+  ```
+  module.exports = {
+  		content: ["./src/**/*.{html,ts}"],
+  };
+  ```
+- Modify src/styles.css
+  ```
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  ```
+- Add test code in app.component.html
+  ```
+  <h1 class="text-3xl font-bold underline text-red-400">
+  		Hello world!
+  </h1>
+  ```
+- Run `ng serve --open`
+
+## To use components from [tailwind-elements.com](https://tailwind-elements.com/quick-start/)
+
+- Run `npm install tw-elements`
+- Modify tailwind.config.js 
+
+  ```
+  content:
+  [
+      "./src/**/*.{html,ts}",
+      "./node_modules/tw-elements/dist/js/**/*.js",
+  ],
+
+  plugins:
+  [
+      require("tw-elements/dist/plugin"),
+  ],
+  ```
+
+- Add `./node_modules/tw-elements/dist/js/index.min.js` in angular.json
+  ```
+  "projects": {
+  	"project-name": {
+  		"architect": {
+  			"build": {
+                  "options": {
+                      "scripts": [
+                          "./node_modules/tw-elements/dist/js/index.min.js"
+                      ]
+                  }
+  			}
+  		}
+  	}
+  }
+  ```
+- Add test code in app.component.html
+
+  ```
+  <h1 class="text-3xl font-bold underline text-red-400">
+  		Hello world!
+  </h1>
+  ```
+
+- Run `ng serve --open`
+
+## Install Jquery using CLI
+
+- `npm i --save-dev @types/jquery`
+- Modify tsconfig.app.json
+  ```
+  "compilerOptions": {
+      "types": [ "jquery" ]
+  }
+  ```
+
+## Install [Angular Material](https://material.angular.io/components/categories)
+
+- Run `ng add @angular/material`
+
+<br>
+<br>
+
+# Angular version 13.3.5.
 
 ## Development server
 
