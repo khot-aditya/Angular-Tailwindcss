@@ -1,5 +1,10 @@
 # Angular with Tailwind CSS framework
 
+## Quickly install and run code with npm command
+- `npx @aditya6838/angular-starter <app-name>`
+- eg. npx @aditya6838/angular-starter my-angular-app
+
+
 ## CLI Steps
 
 - Run `ng new project-name`
