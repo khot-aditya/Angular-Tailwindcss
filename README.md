@@ -2,7 +2,11 @@
 
 ## Quickly install and run code with npm command
 - `npx @aditya6838/angular-starter <app-name>`
-- eg. npx @aditya6838/angular-starter my-angular-app
+
+
+Example -  `npx @aditya6838/angular-starter my-angular-app`
+
+This command will download all starter files from npm then use `ng serve --open` or `npm start` to open app in browser.
 
 <br>
 <br>
